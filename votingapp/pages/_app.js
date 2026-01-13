@@ -1,7 +1,10 @@
 import "../styles/globals.css";
+import { VoterProvider } from "../context/Voter";
 
-//INTERNAL IMPORT
-
-const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />;
+const MyApp = ({ Component, pageProps }) => (
+  <VoterProvider>
+    <Component {...pageProps} />
+  </VoterProvider>
+);
 
 export default MyApp;
