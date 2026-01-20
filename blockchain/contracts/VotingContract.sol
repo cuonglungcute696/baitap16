@@ -65,6 +65,17 @@ contract VotingContract {
         votingEnded = true;
     }
 
+    function resetVoting() public onlyOwner {
+        // Reset voting state
+        votingEnded = false;
+        candidatesCount = 0;
+        
+        // Xóa tất cả candidates (mapping không thể xóa trực tiếp, nên reset trên frontend)
+        // Xóa tất cả voters
+        // Xóa tất cả allowedVoters
+        // Note: Solidity mapping không thể iterate để xóa, frontend sẽ refresh dữ liệu
+    }
+
     function getCandidate(uint256 _id) public view returns (uint256, string memory, uint256) {
         Candidate memory c = candidates[_id];
         return (c.id, c.name, c.voteCount);
@@ -76,5 +87,9 @@ contract VotingContract {
             allCandidates[i - 1] = candidates[i];
         }
         return allCandidates;
+    }
+
+    function getOwner() public view returns (address) {
+        return owner;
     }
 }

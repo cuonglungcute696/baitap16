@@ -1,10 +1,13 @@
 import "../styles/globals.css";
 import { VoterProvider } from "../context/Voter";
+import { ToastProvider } from "../components/Toast/Toast";
 
 const MyApp = ({ Component, pageProps }) => (
-  <VoterProvider>
-    <Component {...pageProps} />
-  </VoterProvider>
+  <ToastProvider>
+    <VoterProvider>
+      <Component {...pageProps} />
+    </VoterProvider>
+  </ToastProvider>
 );
 
 export default MyApp;

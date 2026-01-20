@@ -1,0 +1,167 @@
+/* Page layout */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7ff, #eef2ff);
+  padding: 2rem;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 14px;
+  padding: 2.5rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.headerBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.appLabel {
+  margin: 0;
+  color: #64748b;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.title {
+  color: #111827;
+  margin: 0.2rem 0 0;
+  font-size: 2.2rem;
+  letter-spacing: -0.02em;
+}
+
+.badge {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.badgeLive {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #34d399;
+}
+
+.badgeEnded {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+/* Alerts */
+.error {
+  background: #fee;
+  color: #c33;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border: 1px solid #fcc;
+}
+
+.infoBanner {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Wallet connect */
+.connectSection {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Account */
+.accountInfo {
+  background: #f8fafc;
+  padding: 1.1rem 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid #e2e8f0;
+}
+
+.accountActions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.ownerBadge {
+  background: #e0f2fe;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0b6ba8;
+  border: 1px solid #bae6fd;
+}
+
+.endedTag {
+  background: #ffe4e6;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #9f1239;
+  border: 1px solid #fecdd3;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+/* Buttons */
+.button {
+  padding: 0.85rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.primaryBtn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+}
+
+.successBtn {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+}
+
+/* Candidate list */
+.candidateList {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Misc */
+.noData {
+  text-align: center;
+  color: #999;
+  padding: 2rem;
+}
